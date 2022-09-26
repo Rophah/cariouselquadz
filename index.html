@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap 5 Carousel</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- details -->
+    <div class="header-top-bar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <ul class="top-bar-info list-inline-item pl-0 mb-0">
+              <li class="list-inline-item">
+                <a href="mailto:support@gmail.com" class="colorWhite"
+                  ><i class="icofont-support-faq mr-2"></i
+                  >support@quadzland.com</a
+                >
+              </li>
+              <li class="list-inline-item colorWhite">
+                <i class="icofont-location-pin mr-2"></i>Address: 9520, Spectrum
+                Dr. Austin Tx. 78717
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
+              <a href="tel:+23-345-67890">
+                <span class="colorWhite">Call Now : </span>
+                <span class="h4 colorWhite">+17372490925</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- nav -->
+    <div id="navHome">
+      <div class="">
+        <nav class="navbar navbar-expand-lg" id="nav">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                src="./img/logoh.png"
+                height="50"
+                width="150"
+                alt=""
+                class="img-fluid"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Platforms
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="service.html"
+                        >DiGiSTART 1000 (MD1000)
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="service.html"
+                        >Worka Program (MWP)
+                      </a>
+                    </li>
+                    <li style="background-color: #052935">
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="service.html"
+                        >Digi Ready Project (DR-OneMillion)
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="service.html"
+                        >MO Retail Store Partner Program (RSPP)
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+                <a href="#vision">
+                  <button
+                    class="btn"
+                    style="background-color: #052935; color: #fff"
+                    type="submit"
+                  >
+                    Application Form
+                  </button>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- home -->
+    <section class="home">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-controls">
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carousel"
+              data-slide-to="0"
+              class="active"
+              style="
+                background-image: url('img/imgix-klWUhr-wPJ8-unsplash.jpg');
+              "
+            ></li>
+            <li
+              data-target="#carousel"
+              data-slide-to="1"
+              style="
+                background-image: url('img/martijn-baudoin-4h0HqC3K4-c-unsplash.jpg');
+              "
+            ></li>
+            <li
+              data-target="#carousel"
+              data-slide-to="2"
+              style="
+                background-image: url('img/structured-cabling-business.jpg');
+              "
+            ></li>
+          </ol>
+          <a
+            class="carousel-control-prev"
+            href="#carousel"
+            role="button"
+            data-slide="prev"
+          >
+            <img src="img/left-arrow.svg" alt="Prev" />
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carousel"
+            role="button"
+            data-slide="next"
+          >
+            <img src="img/right-arrow.svg" alt="Next" />
+          </a>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background-image: url('img/imgix-klWUhr-wPJ8-unsplash.jpg')"
+          >
+            <div class="container">
+              <h2>I'm Rose</h2>
+              <p>Web Developer</p>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="
+              background-image: url('img/martijn-baudoin-4h0HqC3K4-c-unsplash.jpg');
+            "
+          >
+            <div class="container">
+              <h2>I'm Jasmine</h2>
+              <p>Web Developer</p>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('img/structured-cabling-business.jpg')"
+          >
+            <div class="container">
+              <h2>I'm Ruby</h2>
+              <p>Web Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
